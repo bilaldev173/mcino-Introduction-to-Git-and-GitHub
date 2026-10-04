@@ -2,6 +2,8 @@
 
 A bash script that calculates simple interest given principal, annual rate of interest and time period in years.
 
+Do not use this in production. Sample code for testing purpose only.
+
 ## Input:
 * **p**, principal amount
 * **t**, time period in years
@@ -9,7 +11,3 @@ A bash script that calculates simple interest given principal, annual rate of in
 
 ## Output:
 * **simple interest** = p*t*r
-
-## Usage:
-```bash
-./simple-interest.sh
