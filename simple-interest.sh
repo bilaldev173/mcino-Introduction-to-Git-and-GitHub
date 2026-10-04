@@ -1,12 +1,25 @@
 #!/bin/bash
-# Script de calcul d'intérêt simple : I = P * r * t
+# Do not use this in production. Sample code for testing purpose only.
 
-echo "Entrez le principal (P) :"
+# Author: IBM Skills Network
+# Additional Authors:
+# bilaldev173
+
+# Input:
+# p, principal amount
+# t, time period in years
+# r, annual rate of interest
+
+# Output:
+# simple interest = p*t*r
+
+echo "Enter the principal:"
 read p
-echo "Entrez le taux d'intérêt par an (r) :"
+echo "Enter rate of interest per annum:"
 read r
-echo "Entrez la période en années (t) :"
+echo "Enter time period in years:"
 read t
 
-s=`expr $p \* $r \* $t / 100`
-echo "L'intérêt simple est : $s"
+s=`expr $p \* $t \* $r / 100`
+echo "The simple interest is: "
+echo $s
